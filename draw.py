@@ -61,16 +61,17 @@ def wrap(draw, s, f, max_w):
 
 
 def fit_lines(draw, s, f, max_w, max_lines, sizes):
-    """Pick the largest size in `sizes` (first entry is f's size) that fits
-    the text in max_lines; returns (font, lines)."""
-    base = sizes[0]
+    """Render the text at the largest size in `sizes` that fits in
+    max_lines. Raises instead of silently clipping words: every summary
+    on this page is written to fit in 2 lines at 12.5 px, so a failure
+    here means the copy must be shortened, not the font shrunk."""
     for sz in sizes:
         ff = font(f.path.rsplit("/", 1)[-1], sz) if hasattr(f, "path") else f
         lines = wrap(draw, s, ff, max_w)
         if len(lines) <= max_lines:
             return ff, lines
-    ff = font(f.path.rsplit("/", 1)[-1], sizes[-1]) if hasattr(f, "path") else f
-    return ff, wrap(draw, s, ff, max_w)[:max_lines]
+    raise ValueError("text does not fit in %d lines at %s px: %r"
+                     % (max_lines, sizes, s))
 
 
 def vgrad(img, box, top, bottom):
@@ -96,8 +97,8 @@ def star(d, cx, cy, r, color):
 # (tag, headline, summary, pill, scene)
 HEROES = [
     ("ASIA · MARKETS",
-     "ASIAN STOCKS SOAR AS NVIDIA ROARS BACK",
-     "Taiwan leapt 9.1% and Seoul 7.5% as Huang's Nvidia return revived Asia's AI trade.",
+     "ASIAN STOCKS SOAR IN TUESDAY TECH RALLY",
+     "Taiwan stocks surge 9.1% and Seoul jumps 7.5% in Tuesday's broad Asian tech rally.",
      "panel01"),
     ("EUROPE · UKRAINE",
      "RUSSIAN STRIKE HITS ZAPORIZHZHIA",
@@ -124,24 +125,24 @@ CARDS = [
      "6 KILLED · 10 HURT", "panel06"),
     ("AFRICA · ETHIOPIA",
      "TIGRAY SHELLING 'MAY BE WAR CRIMES'",
-     "Amnesty says Ethiopian shelling that killed 14 civilians in Tigray towns should be probed as war crimes.",
+     "Amnesty urges war-crimes probe after Ethiopian shelling kills 14 civilians in Tigray.",
      "14 CIVILIANS DEAD", "panel07"),
     ("ASIA · BANGLADESH",
      "HASINA TO FLY HOME ON 16 DECEMBER",
-     "The ousted premier plans to end two years of exile in India, flying home on Liberation Day.",
+     "The ousted premier plans to end over two years of exile, flying home on Liberation Day.",
      "16 DECEMBER · DHAKA", "panel08"),
     ("ASIA · JAPAN",
      "JAPAN PAYS ICC BILL EARLY",
      "Tokyo will pay its full 2027 court contribution by year-end as US sanctions threaten the ICC.",
      "15% OF ICC BUDGET", "panel09"),
-    ("SCIENCE · MARS",
-     "MARS BOULDERS LINE UP IN NEAT ROWS",
-     "NASA images show boulders in curving rows on Mars — and scientists cannot explain how they formed.",
-     "ROWS 5–10 M APART", "panel10"),
-    ("SPORT · EUROPE",
-     "CHAMPIONS LEAGUE NIGHT RETURNS",
-     "Nine ties kick off tonight, with Arsenal hosting Dortmund and Manchester City facing Napoli.",
-     "9 TIES · 21:00 CET", "panel11"),
+    ("ASIA · MALAYSIA",
+     "MALAYSIA TO PRESS ON WITH MYANMAR REFUGEE RETURNS",
+     "Malaysia will keep working with Myanmar on refugee returns, PM Anwar says.",
+     "1,500 TO RETURN IN DEC", "panel10"),
+    ("EUROPE · UKRAINE",
+     "UKRAINE DEFENDS SHIP STRIKES OFF LIBYA",
+     "Kyiv says sinking a Russian corvette off Libya was lawful self-defence.",
+     "CORVETTE MERKURY SUNK", "panel11"),
 ]
 
 KPI = [
@@ -154,14 +155,14 @@ KPI = [
 ]
 
 DIGEST = [
-    "Canada and Qatar sign an investment pact, unlocking Gulf funds.",
-    "Malaysia keeps working with Myanmar on refugee returns.",
-    "FIFA chief Infantino's private-jet flights come under scrutiny.",
-    "Tamagotchi turns 30 with a Times Square birthday celebration.",
-    "First Children's Booker prize reveals its 'Great Eight' list.",
-    "Ice baths ease sore muscles, but a study finds a hidden cost.",
-    "Smoke silences Borneo's gibbons as fires choke the forests.",
-    "Commanders stun the Bengals on a last-second field goal.",
+    "Canada and Qatar sign an investment pact.",
+    "South Korea tightens exam rules after cheating scandal.",
+    "Infantino's private-jet flights face scrutiny.",
+    "Tamagotchi turns 30 with a Times Square party.",
+    "First Children's Booker reveals its 'Great Eight'.",
+    "Ice baths ease sore muscles — but at a hidden cost.",
+    "Smoke silences Borneo's gibbons as fires rage.",
+    "Commanders stun Bengals on a last-second field goal.",
 ]
 
 # Map pins: (number, label, x, y) in the map panel's pixel space.
@@ -175,8 +176,8 @@ PINS = [
     (7, "ALAMATA", 300, 906),
     (8, "DHAKA", 368, 899),
     (9, "TOKYO", 432, 893),
-    (10, "PASADENA", 99, 893),
-    (11, "LONDON", 251, 883),
+    (10, "KUALA LUMPUR", 374, 913),
+    (11, "BENGHAZI", 277, 895),
 ]
 
 # Rough continent outlines in lon/lat, projected into the map panel.
@@ -331,11 +332,11 @@ def draw_hero(img, d, x, y, w, h, tag, headline, summary, scene):
     for ln in lines[:2]:
         d.text((tx, ly), ln, font=hf, fill=INK)
         ly += 25
-    sf0 = SANS(13)
-    sf, slines = fit_lines(d, summary, sf0, w - 20, 2, [13, 12])
+    sf0 = SANS(12.5)
+    sf, slines = fit_lines(d, summary, sf0, w - 20, 2, [12.5])
     ly += 2
     for ln in slines:
-        d.text((tx, ly), ln, font=sf, fill=(40, 40, 44))
+        d.text((tx, ly), ln, font=sf, fill=(30, 36, 48))
         ly += 17
 
 
@@ -351,13 +352,13 @@ def draw_card(img, d, x, y, w, h, tag, headline, summary, pill, scene):
     for ln in lines[:2]:
         d.text((tx, ly), ln, font=hf, fill=INK)
         ly += 20
-    # summary: fit in 2 lines, shrinking 12 -> 11 if needed
-    sf0 = SANS(12)
-    sf, slines = fit_lines(d, summary, sf0, w - 20, 2, [12, 11])
+    # summary: exactly 2 lines at 12.5 px, never shrunk, never clipped
+    sf0 = SANS(12.5)
+    sf, slines = fit_lines(d, summary, sf0, w - 20, 2, [12.5])
     ly += 2
     for ln in slines:
-        d.text((tx, ly), ln, font=sf, fill=(40, 40, 44))
-        ly += 14
+        d.text((tx, ly), ln, font=sf, fill=(30, 36, 48))
+        ly += 15
     # key-fact pill
     pf = SANS_B(11)
     pw = text_w(d, pill, pf) + 18
@@ -380,12 +381,12 @@ def draw_wide(img, d, x, y, w, h, tag, headline, summary, pill, scene):
     for ln in lines[:2]:
         d.text((tx, ly), ln, font=hf, fill=INK)
         ly += 19
-    sf0 = SANS(12)
-    sf, slines = fit_lines(d, summary, sf0, tw, 2, [12, 11])
+    sf0 = SANS(12.5)
+    sf, slines = fit_lines(d, summary, sf0, tw, 2, [12.5])
     ly += 2
     for ln in slines:
-        d.text((tx, ly), ln, font=sf, fill=(40, 40, 44))
-        ly += 13
+        d.text((tx, ly), ln, font=sf, fill=(30, 36, 48))
+        ly += 15
     pf = SANS_B(11)
     pw = text_w(d, pill, pf) + 18
     py = y + h - 24
@@ -408,9 +409,9 @@ def draw_map_panel(img, d, x, y, w, h):
                   outline=(10, 10, 16), width=2)
         s = str(num)
         d.text((px - text_w(d, s, pf) / 2, py - 6), s, font=pf, fill=WHITE)
-    # legend (2 lines)
-    lf = SANS_B(11)
-    legend = "  ·  ".join("%d %s" % (n, lab) for n, lab, _, _ in PINS)
+    # legend (2 lines; 10 px keeps full labels with a clean break after 6)
+    lf = SANS_B(10)
+    legend = " · ".join("%d %s" % (n, lab) for n, lab, _, _ in PINS)
     lines = wrap(d, legend, lf, w - 20)
     ly = y + h - 8 - 14 * len(lines)
     for ln in lines:
@@ -424,28 +425,28 @@ def draw_digest_panel(img, d, x, y, w, h):
     d.text((x + 10, y + 8), "ALSO ON TUESDAY 24 NOVEMBER", font=hf, fill=INK)
     d.line([(x + 10, y + 28), (x + w - 10, y + 28)], fill=RULE, width=1)
     col_w = (w - 30) // 2
-    # Stack each column's 4 items with a 5px gap between items. Try 12px
-    # bold first; fall back to 11px if the column would overflow the panel.
+    # Fixed 12.5 px bold digest, line height 12, 5 px gap between items.
+    # Every item is written to fit in 2 lines; raise rather than shrink
+    # the font or clip words if a column would overflow the panel.
     top = y + 33
     avail = y + h - 6 - top
-    for size in (12, 11):
-        df = SANS_B(size)
-        lh = size  # line height equals the font size (tight, clean stack)
-        cols = []
-        ok = True
-        for col in range(2):
-            items = []
-            total = 0
-            for i in range(4):
-                item = DIGEST[col * 4 + i]
-                lines = wrap(d, item, df, col_w - 16)
-                items.append(lines)
-                total += len(lines) * lh + 5
-            if total - 5 > avail:
-                ok = False
-            cols.append(items)
-        if ok:
-            break
+    size, lh = 12.5, 12
+    df = SANS_B(size)
+    cols = []
+    for col in range(2):
+        items = []
+        total = 0
+        for i in range(4):
+            item = DIGEST[col * 4 + i]
+            lines = wrap(d, item, df, col_w - 16)
+            if len(lines) > 2:
+                raise ValueError("digest item does not fit in 2 lines "
+                                 "at 12.5 px: %r" % item)
+            items.append(lines)
+            total += len(lines) * lh + 5
+        if total - 5 > avail:
+            raise ValueError("digest column %d overflows at 12.5 px" % col)
+        cols.append(items)
     bullet_w = text_w(d, "▪ ", df)
     for col in range(2):
         ix = x + 10 + col * (col_w + 10)
@@ -454,7 +455,7 @@ def draw_digest_panel(img, d, x, y, w, h):
             d.text((ix, iy), "▪", font=df, fill=RED)
             ly = iy
             for ln in lines:
-                d.text((ix + bullet_w, ly), ln, font=df, fill=(40, 40, 44))
+                d.text((ix + bullet_w, ly), ln, font=df, fill=(30, 36, 48))
                 ly += lh
             iy = ly + 5
 

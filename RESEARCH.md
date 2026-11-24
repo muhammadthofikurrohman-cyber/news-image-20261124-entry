@@ -11,12 +11,13 @@ Meduza/Mediazona 700,000 Russian deaths estimate (Mon 23 Nov).
 
 ## CARDS (11)
 
-### HERO 1 — ASIA / MARKETS: Asian stocks rally on Huang's Nvidia return
+### HERO 1 — ASIA / MARKETS: Asian stocks surge in Tuesday tech rally
 - Source: Reuters, "Asian stocks rally as Huang's Nvidia return revives AI trade",
   published Tue 24 Nov 2026 (URL .../global-markets-2026-11-24/).
-- Facts: MSCI Asia-Pacific ex-Japan +4.6% (biggest one-day gain since 31 Jul);
-  Nikkei +4.5%; KOSPI +7.5%; Taiwan +9.1%. Nvidia +31.5% on Monday, biggest
-  daily gain in 23 years, restoring ~$1 trillion in value. US 10-yr yield 4.94%.
+- Facts (Tuesday 24 Nov market data only): MSCI Asia-Pacific ex-Japan +4.6%
+  (biggest one-day gain since 31 Jul); Nikkei +4.5%; KOSPI +7.5%;
+  Taiwan +9.1%. The v3 card drops the Monday Nvidia-CEO framing entirely:
+  headline and summary now report only Tuesday's market moves.
 - KPI used: +9.1% (Taiwan).
 
 ### HERO 2 — EUROPE / UKRAINE: Russian attack on Zaporizhzhia
@@ -81,22 +82,43 @@ Meduza/Mediazona 700,000 Russian deaths estimate (Mon 23 Nov).
   budget, its largest contributor.
 - Pill: 15% OF ICC BUDGET.
 
-### CARD 10 — SCIENCE / MARS: Neat rows of boulders baffle scientists
-- Source: ScienceAlert, "NASA Spots Bizarrely Neat Rows of Boulders on Mars.
-  Scientists Can't Explain Them.", published Tue 24 Nov 2026 06:00 UTC.
-- Facts: HiRISE images of Daedalia Planum show bright boulders in long curving
-  rows 5–10 m apart, like a fingerprint; no known explanation (frost heave or
-  seismic sorting are candidates). Images from Aug 2024; article first
-  published Tue 24 Nov 2026.
-- Pill: ROWS 5–10 M APART. Map pin placed at NASA JPL, Pasadena (image source).
+### CARD 10 — ASIA / MALAYSIA: Malaysia presses on with Myanmar refugee returns
+- Source: Reuters, "Malaysia to continue working with Myanmar on refugee
+  repatriation, PM says after genocide ruling", Tue 24 Nov 2026 (URL
+  .../malaysia-continue-working-with-myanmar-refugee-repatriation-pm-says-after-2026-11-24/).
+- Facts: PM Anwar Ibrahim said Tuesday in Parliament that Malaysia will keep
+  engaging Myanmar's military-backed government on repatriating refugees,
+  after the ICJ genocide ruling; Malaysia plans to send back another 1,500
+  Myanmar nationals on three Myanmar navy vessels on 6–7 December; 225,740
+  refugees and asylum-seekers are registered with UNHCR in Malaysia, ~90%
+  from Myanmar; Turkey is not ready to resettle Rohingya refugees.
+- Pill: 1,500 TO RETURN IN DEC. Map pin at Kuala Lumpur.
+- Replaces the Mars-boulders card (evergreen science piece): the new card is
+  a concrete Tuesday diplomatic development.
 
-### CARD 11 — SPORTS / EUROPE: Champions League Matchday 5 tonight
-- Source: UEFA.com, 2026/27 Champions League fixtures, Matchday 5 listed for
-  Tuesday 24 November 2026.
-- Facts: nine league-phase ties kick off Tuesday evening (21:00 CET unless
-  stated), incl. Arsenal vs Borussia Dortmund and Manchester City vs Napoli;
-  Bodø/Glimt vs LASK and Galatasaray vs Aston Villa at 18:45.
-- Pill: 9 TIES TONIGHT. Map pin at London (Arsenal host Dortmund).
+### CARD 11 — EUROPE / UKRAINE: Kyiv defends ship strikes off Libya
+- Source: Reuters, "Ukraine insists attack on Russian ships in Libya was
+  self-defence", Tue 24 Nov 2026 (URL .../ukraine-insists-attack-russian-ships-libya-was-self-defence-2026-11-24/,
+  page crawled 2026-11-24 12:56 UTC).
+- Facts: Foreign Minister Andrii Sybiha said Tuesday a weekend drone attack
+  on a Russian military vessel and cargo ship in Libyan waters was a
+  legitimate act of self-defence (UN Charter Art. 51); Libya's Tripoli-based
+  Government of National Unity had condemned on Monday the operation that
+  sank the Russian naval corvette Merkury in Benghazi port. In an interview
+  published Tuesday, President Zelenskiy confirmed Ukraine was responsible
+  for a separate Saturday drone strike on the Russian cargo vessel Sparta II
+  in the Gulf of Finland (carrying weapons; towed to St Petersburg, Russia's
+  Transport Ministry said Tuesday).
+- Pill: CORVETTE MERKURY SUNK. Map pin at Benghazi.
+- Replaces the Champions League "tonight" preview card (no result yet on
+  Tuesday evening): the new card is a concrete Tuesday-reported development.
+- NOT used: Canada–Qatar investment pact as a card — Reuters reported it
+  Mon 23 Nov as "set to sign on Tuesday" and no Tuesday confirmation of the
+  signing was found live (all Tue sources still say "expected to sign"), so
+  it stays a digest item only. The Russian-jets / South Korea evacuation
+  alert was also considered and NOT used as a card: the incident happened
+  07:52 local Tuesday in Korea = 22:52 UTC Monday, so it fails the page's
+  strict "(UTC)" date-check footer.
 
 ## DIGEST (8 more Tuesday stories)
 
@@ -105,11 +127,12 @@ D1. Canada & Qatar sign investment pact — Reuters, "Canada and Qatar to sign
     investment promotion and protection deal; step toward unlocking Qatari
     investment pledged in January. Page text shortened to "…sign an investment
     pact, unlocking Gulf funds."
-D2. Malaysia keeps working with Myanmar on refugee repatriation — Reuters,
-    Tue 24 Nov 2026: PM Anwar Ibrahim said Tuesday Malaysia will keep engaging
-    Myanmar's military-backed government on repatriating refugees, after a
-    genocide ruling; Turkey not ready to resettle Rohingya refugees. Page text
-    shortened to "…keeps working with Myanmar on refugee returns."
+D2. South Korea tightens school exam rules after cheating scandal — Reuters,
+    "South Korea toughens school exam rules after smart-device cheating
+    scandal", Tue 24 Nov 2026: Acting Education Minister Choi Eun-ok
+    presented tougher rules on Tuesday, including zeroes in every exam taken
+    that day for students caught with a smart device. (Replaces the
+    Malaysia–Myanmar digest line in v3 — that story is now card 10.)
 D3. FIFA president Infantino's private-jet flights under scrutiny — BBC,
     dated 24 Nov 2026 (My News Reader, BBC).
 D4. Tamagotchi turns 30 — ONEPRESS global briefing, 24 Nov 2026: the virtual
@@ -131,6 +154,41 @@ D8. Washington Commanders stun Bengals on a last-second field goal — Sky
     ahead 20–19 with 46 seconds left (Reuters, "Commanders rally past
     Bengals as last-minute drive produces winning FG", 24 Nov 2026;
     AP via theScore, same day). Digest line left UNCHANGED — it was correct.
+
+## v3 REVISION (24 Nov 2026, for Round 2, closes 07:00 WIB 25 Nov)
+- Round 1 result: rank #156 of 7,302, score 715279 (outside Top 50).
+- Card 1: Monday/Nvidia framing removed — headline now "ASIAN STOCKS SOAR
+  IN TUESDAY TECH RALLY", summary exactly "Taiwan stocks surge 9.1% and
+  Seoul jumps 7.5% in Tuesday's broad Asian tech rally." (Tuesday data only).
+- Tigray summary now exactly "Amnesty urges war-crimes probe after Ethiopian
+  shelling kills 14 civilians in Tigray." — fits 2 lines at 12.5 px, verified
+  by measurement and by the renderer's fail-loud check (no clipping).
+- Cards 10 & 11 replaced (see above): Malaysia–Myanmar refugee returns and
+  Ukraine's Libya ship-strike defence. New cinematic panels assets/panel10.jpg
+  (Kuala Lumpur dusk, Petronas Towers) and panel11.jpg (corvette at dusk,
+  Mediterranean) generated in-session, no text/logos; contact inspection
+  found no readable garbled text (one tiny lit building sign in panel10 is
+  ~3 px tall at banner scale and illegible). Map pins 10 (Kuala Lumpur) and
+  11 (Benghazi) re-placed, all 11 pins non-overlapping (min pairwise distance
+  15.2 px, pin radius 7 px), pin 11 clear of the right border; legend now
+  10 px bold so the longer labels break cleanly on two lines.
+- Legibility: ALL card summaries and the digest now render at exactly
+  12.5 px in crisp dark charcoal #1E2430 (was 13/12 px summaries in
+  (40,40,44) and an 11 px digest fallback). draw.py no longer shrinks fonts:
+  fit_lines raises instead of clipping if any summary exceeds 2 lines, and
+  the digest raises if any item exceeds 2 lines or a column overflows.
+  Digest wording shortened so every item fits 2 lines at 12.5 px bold
+  (line height 12, 5 px gaps). Summaries stay regular weight (not bold):
+  bold would break the mandated 2-line fit — the Japan summary's longest
+  line already measures exactly 300 px in regular 12.5 px.
+- Re-rendered entry.png: 1024×1024, 607,863 bytes (< 1 MiB),
+  sha256 38fb095956d3db333544703139053b44c162143ba827d9872cd94374d30ac075,
+  byte-identical across 2 draw.py runs and 2 main.py runs (python3 -P -s),
+  output mode 0644. 300 px downscale checked: masthead, KPI numbers,
+  headlines, pills and digest stay legible.
+- Kit check (no transcripts yet — parent bundles): 4 passed, 1 failed
+  (transcripts_present, expected), 14 skipped, 5 deferred to submission.
+  No security flags.
 
 ## v2 REVISION (24 Nov 2026, before Round 1 close 19:00 WIB)
 - All 11 card banners replaced: the flat-vector geometric scenes are gone.

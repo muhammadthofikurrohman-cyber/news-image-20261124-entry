@@ -11,13 +11,12 @@ Meduza/Mediazona 700,000 Russian deaths estimate (Mon 23 Nov).
 
 ## CARDS (11)
 
-### HERO 1 — ASIA / MARKETS: Asian stocks surge in Tuesday tech rally
+### HERO 1 — ASIA / MARKETS: Asian stocks rally on Huang's Nvidia return
 - Source: Reuters, "Asian stocks rally as Huang's Nvidia return revives AI trade",
   published Tue 24 Nov 2026 (URL .../global-markets-2026-11-24/).
-- Facts (Tuesday 24 Nov market data only): MSCI Asia-Pacific ex-Japan +4.6%
-  (biggest one-day gain since 31 Jul); Nikkei +4.5%; KOSPI +7.5%;
-  Taiwan +9.1%. The v3 card drops the Monday Nvidia-CEO framing entirely:
-  headline and summary now report only Tuesday's market moves.
+- Facts: MSCI Asia-Pacific ex-Japan +4.6% (biggest one-day gain since 31 Jul);
+  Nikkei +4.5%; KOSPI +7.5%; Taiwan +9.1%. Nvidia +31.5% on Monday, biggest
+  daily gain in 23 years, restoring ~$1 trillion in value. US 10-yr yield 4.94%.
 - KPI used: +9.1% (Taiwan).
 
 ### HERO 2 — EUROPE / UKRAINE: Russian attack on Zaporizhzhia
@@ -82,43 +81,34 @@ Meduza/Mediazona 700,000 Russian deaths estimate (Mon 23 Nov).
   budget, its largest contributor.
 - Pill: 15% OF ICC BUDGET.
 
-### CARD 10 — ASIA / MALAYSIA: Malaysia presses on with Myanmar refugee returns
-- Source: Reuters, "Malaysia to continue working with Myanmar on refugee
-  repatriation, PM says after genocide ruling", Tue 24 Nov 2026 (URL
-  .../malaysia-continue-working-with-myanmar-refugee-repatriation-pm-says-after-2026-11-24/).
-- Facts: PM Anwar Ibrahim said Tuesday in Parliament that Malaysia will keep
-  engaging Myanmar's military-backed government on repatriating refugees,
-  after the ICJ genocide ruling; Malaysia plans to send back another 1,500
-  Myanmar nationals on three Myanmar navy vessels on 6–7 December; 225,740
-  refugees and asylum-seekers are registered with UNHCR in Malaysia, ~90%
-  from Myanmar; Turkey is not ready to resettle Rohingya refugees.
-- Pill: 1,500 TO RETURN IN DEC. Map pin at Kuala Lumpur.
-- Replaces the Mars-boulders card (evergreen science piece): the new card is
-  a concrete Tuesday diplomatic development.
+### CARD 10 — MIDDLE EAST / SAUDI ARABIA: Houthi strike hits Riyadh tower
+- Source: Reuters, "Saudi-led coalition says tower in Riyadh finance district
+  targeted by 'terrorist attack'", Tue 24 Nov 2026; Reuters, "Yemen's Houthis
+  say they attacked Saudi oil refinery and Riyadh financial district",
+  25 Nov 2026 (reporting the Tuesday strike): "Saudi civil defence said 11
+  people were wounded on Tuesday in a strike on a tower in Riyadh's financial
+  district"; "On Tuesday, a strike on Riyadh's tallest tower injured at least
+  11 people, according to Saudi authorities."
+- Facts: a Houthi strike hit a tower in Riyadh's King Abdullah Financial
+  District on Tuesday 24 Nov 2026, wounding 11 (incl. two Indians); the
+  Saudi-led coalition called it a terrorist attack and vowed a firm response.
+  Second strike on the district's towers in under a week (19 Nov attack caused
+  material damage, no injuries).
+- Pill: 11 WOUNDED. Map pin at Riyadh (nudged to 318,910 so it clears Erbil,
+  Ras Al Khaimah and Alamata — min pairwise pin distance 15.0 px).
 
-### CARD 11 — EUROPE / UKRAINE: Kyiv defends ship strikes off Libya
-- Source: Reuters, "Ukraine insists attack on Russian ships in Libya was
-  self-defence", Tue 24 Nov 2026 (URL .../ukraine-insists-attack-russian-ships-libya-was-self-defence-2026-11-24/,
-  page crawled 2026-11-24 12:56 UTC).
-- Facts: Foreign Minister Andrii Sybiha said Tuesday a weekend drone attack
-  on a Russian military vessel and cargo ship in Libyan waters was a
-  legitimate act of self-defence (UN Charter Art. 51); Libya's Tripoli-based
-  Government of National Unity had condemned on Monday the operation that
-  sank the Russian naval corvette Merkury in Benghazi port. In an interview
-  published Tuesday, President Zelenskiy confirmed Ukraine was responsible
-  for a separate Saturday drone strike on the Russian cargo vessel Sparta II
-  in the Gulf of Finland (carrying weapons; towed to St Petersburg, Russia's
-  Transport Ministry said Tuesday).
-- Pill: CORVETTE MERKURY SUNK. Map pin at Benghazi.
-- Replaces the Champions League "tonight" preview card (no result yet on
-  Tuesday evening): the new card is a concrete Tuesday-reported development.
-- NOT used: Canada–Qatar investment pact as a card — Reuters reported it
-  Mon 23 Nov as "set to sign on Tuesday" and no Tuesday confirmation of the
-  signing was found live (all Tue sources still say "expected to sign"), so
-  it stays a digest item only. The Russian-jets / South Korea evacuation
-  alert was also considered and NOT used as a card: the incident happened
-  07:52 local Tuesday in Korea = 22:52 UTC Monday, so it fails the page's
-  strict "(UTC)" date-check footer.
+### CARD 11 — SPORT / AFRICA: Senegal win back Africa Cup title
+- Source: Reuters, "Senegal reinstated as 2025 Africa Cup of Nations winners",
+  Tue 24 Nov 2026; AP via theScore, same day: "Senegal won back the Africa
+  Cup of Nations title in a legal fight on Tuesday after the Court of
+  Arbitration for Sport overturned an earlier ruling which handed the trophy
+  to Morocco."
+- Facts: CAS (Lausanne) unanimously upheld Senegal's appeal on Tuesday
+  24 Nov 2026, setting aside the CAF Appeal Board decision that had forfeited
+  Senegal's 1-0 extra-time final win over Morocco (Jan 2026, Rabat) and ruling
+  the referee's decision to resume the match was final. Result confirmed 1-0
+  for Senegal.
+- Pill: TITLE RESTORED. Map pin at Lausanne (CAS seat).
 
 ## DIGEST (8 more Tuesday stories)
 
@@ -127,20 +117,29 @@ D1. Canada & Qatar sign investment pact — Reuters, "Canada and Qatar to sign
     investment promotion and protection deal; step toward unlocking Qatari
     investment pledged in January. Page text shortened to "…sign an investment
     pact, unlocking Gulf funds."
-D2. South Korea tightens school exam rules after cheating scandal — Reuters,
-    "South Korea toughens school exam rules after smart-device cheating
-    scandal", Tue 24 Nov 2026: Acting Education Minister Choi Eun-ok
-    presented tougher rules on Tuesday, including zeroes in every exam taken
-    that day for students caught with a smart device. (Replaces the
-    Malaysia–Myanmar digest line in v3 — that story is now card 10.)
+D2. Malaysia keeps working with Myanmar on refugee repatriation — Reuters,
+    Tue 24 Nov 2026: PM Anwar Ibrahim said Tuesday Malaysia will keep engaging
+    Myanmar's military-backed government on repatriating refugees, after a
+    genocide ruling; Turkey not ready to resettle Rohingya refugees. Page text
+    shortened to "…keeps working with Myanmar on refugee returns."
 D3. FIFA president Infantino's private-jet flights under scrutiny — BBC,
     dated 24 Nov 2026 (My News Reader, BBC).
-D4. Tamagotchi turns 30 — ONEPRESS global briefing, 24 Nov 2026: the virtual
-    pet takes its tiny pets to Times Square for its 30th anniversary.
-D5. First Children's Booker prize reveals 'Great Eight' shortlist — The
-    Guardian, 24 Nov 2026 (also BBC same day).
-D6. Ice baths relieve sore muscles but carry a hidden cost — ScienceAlert,
-    24 Nov 2026: giant study finds ice baths can relieve sore muscles.
+D4. Nigeria's central bank holds its key rate at 23% — Reuters,
+    "Nigeria's central bank maintains key rate to anchor inflation
+    expectations", Tue 24 Nov 2026 13:11 UTC: the Central Bank of Nigeria
+    kept its monetary policy rate unchanged at 23% at its last scheduled
+    meeting before January's national election; Governor Olayemi Cardoso
+    said the decision would anchor inflation expectations.
+D5. Sanofi to buy US biotech Insmed in a $41 billion deal — Reuters,
+    "Europe's STOXX 600 subdued after AI-driven rally", Tue 24 Nov 2026:
+    Sanofi gained after announcing it would acquire US drug company
+    Insmed for $41 billion (all-cash, $175/share), its biggest move yet
+    to reshape the French drugmaker; also Bloomberg/FT, same day.
+D6. UK records its highest number of heat-related deaths in 2026 —
+    Reuters, "UK records highest number of heat-related deaths in 2026",
+    Tue 24 Nov 2026: heat-associated deaths in Britain reached 5,258
+    during summer 2026, the highest annual total since records began in
+    2016, according to the UK Health Security Agency.
 D7. Indonesian Borneo's forests go quiet as smoke silences gibbons —
     Mongabay, 24 Nov 2026.
 D8. Washington Commanders stun Bengals on a last-second field goal — Sky
@@ -154,41 +153,6 @@ D8. Washington Commanders stun Bengals on a last-second field goal — Sky
     ahead 20–19 with 46 seconds left (Reuters, "Commanders rally past
     Bengals as last-minute drive produces winning FG", 24 Nov 2026;
     AP via theScore, same day). Digest line left UNCHANGED — it was correct.
-
-## v3 REVISION (24 Nov 2026, for Round 2, closes 07:00 WIB 25 Nov)
-- Round 1 result: rank #156 of 7,302, score 715279 (outside Top 50).
-- Card 1: Monday/Nvidia framing removed — headline now "ASIAN STOCKS SOAR
-  IN TUESDAY TECH RALLY", summary exactly "Taiwan stocks surge 9.1% and
-  Seoul jumps 7.5% in Tuesday's broad Asian tech rally." (Tuesday data only).
-- Tigray summary now exactly "Amnesty urges war-crimes probe after Ethiopian
-  shelling kills 14 civilians in Tigray." — fits 2 lines at 12.5 px, verified
-  by measurement and by the renderer's fail-loud check (no clipping).
-- Cards 10 & 11 replaced (see above): Malaysia–Myanmar refugee returns and
-  Ukraine's Libya ship-strike defence. New cinematic panels assets/panel10.jpg
-  (Kuala Lumpur dusk, Petronas Towers) and panel11.jpg (corvette at dusk,
-  Mediterranean) generated in-session, no text/logos; contact inspection
-  found no readable garbled text (one tiny lit building sign in panel10 is
-  ~3 px tall at banner scale and illegible). Map pins 10 (Kuala Lumpur) and
-  11 (Benghazi) re-placed, all 11 pins non-overlapping (min pairwise distance
-  15.2 px, pin radius 7 px), pin 11 clear of the right border; legend now
-  10 px bold so the longer labels break cleanly on two lines.
-- Legibility: ALL card summaries and the digest now render at exactly
-  12.5 px in crisp dark charcoal #1E2430 (was 13/12 px summaries in
-  (40,40,44) and an 11 px digest fallback). draw.py no longer shrinks fonts:
-  fit_lines raises instead of clipping if any summary exceeds 2 lines, and
-  the digest raises if any item exceeds 2 lines or a column overflows.
-  Digest wording shortened so every item fits 2 lines at 12.5 px bold
-  (line height 12, 5 px gaps). Summaries stay regular weight (not bold):
-  bold would break the mandated 2-line fit — the Japan summary's longest
-  line already measures exactly 300 px in regular 12.5 px.
-- Re-rendered entry.png: 1024×1024, 607,863 bytes (< 1 MiB),
-  sha256 38fb095956d3db333544703139053b44c162143ba827d9872cd94374d30ac075,
-  byte-identical across 2 draw.py runs and 2 main.py runs (python3 -P -s),
-  output mode 0644. 300 px downscale checked: masthead, KPI numbers,
-  headlines, pills and digest stay legible.
-- Kit check (no transcripts yet — parent bundles): 4 passed, 1 failed
-  (transcripts_present, expected), 14 skipped, 5 deferred to submission.
-  No security flags.
 
 ## v2 REVISION (24 Nov 2026, before Round 1 close 19:00 WIB)
 - All 11 card banners replaced: the flat-vector geometric scenes are gone.
@@ -219,3 +183,51 @@ D8. Washington Commanders stun Bengals on a last-second field goal — Sky
 4. 6 — KILLED IN HANOI BLAST (Card 6)
 5. 14 — CIVILIANS KILLED IN TIGRAY (Card 7)
 6. 6 CONTINENTS
+
+## v2-POLISH r2 REVISION (25 Nov 2026, before Final close 07:00 WIB 26 Nov)
+Surgical refinement on top of v2-polish (commit 0f344e6). All 11 cards, the
+KPI strip, and all 11 illustrations are 100% unchanged — only digest wording
+and 4 map-pin coordinates changed.
+- Digest: the 3 light trivia items are replaced with major verified Tuesday
+  24 Nov 2026 stories (see new D4/D5/D6 above): Nigeria's central bank holds
+  its rate at 23% (Reuters), Sanofi's $41bn Insmed deal (Reuters), UK record
+  5,258 heat deaths (Reuters). The 5 strong bullets (Canada–Qatar,
+  Malaysia–Myanmar, Infantino, Borneo gibbons, Commanders) are untouched.
+  All 8 items still fit 2 lines at 12.5px bold #1E2430 (measured with PIL);
+  4+4 balance kept; no card/digest duplication.
+- Map pins: #4 Erbil (311,892)→(311,890), #5 Ras Al Khaimah (327,898)→
+  (328,897), #7 Alamata (300,906)→(298,909), #10 Riyadh (318,910)→(316,912)
+  — 2–3px nudges each, all still on their real locations. Minimum pairwise
+  pin distance rises 15.0px → 18.25px (Alamata–Riyadh), so at 300px thumbnail
+  width the closest pin centres sit 5.35px apart vs 4.10px combined diameter
+  (~1.24px clear gap — no borders touch). Legend text unchanged.
+
+## v2-POLISH REVISION (25 Nov 2026, before Final close 07:00 WIB 26 Nov)
+Surgical upgrade built DIRECTLY on v2 (commit b4a2552, Round 1: 71.53%,
+rank #156 of 7,302). The v3/v3.1 changes were DISCARDED entirely (Round 2
+v3.1 fell to 56.76%, rank #2701) — none of its stories, panels, or wording
+is reused here. The 9 proven v2 stories, KPI strip, and 9 cinematic
+illustrations are untouched, including Card 8 Hasina's v2 wording
+("two years of exile").
+- Card 1: headline now "ASIAN STOCKS SOAR IN TUESDAY TECH RALLY"; summary
+  now exactly "Taiwan leapt 9.1% and Seoul jumped 7.5% in Tuesday's broad
+  Asian tech rally." — no Nvidia/Monday reference anywhere. Figures unchanged
+  (Taiwan +9.1%, Seoul +7.5%, Nikkei +4.5%, MSCI +4.6%).
+- Card 7 Tigray: summary now exactly "Amnesty urges war-crimes probe after
+  Ethiopian shelling kills 14 civilians in Tigray." — verified to fit 2 lines
+  at 12px (measured with PIL before rendering).
+- Cards 10 & 11 replaced (see new sections above): Riyadh Houthi strike
+  (Reuters, Tue 24 Nov) and CAS restores Senegal AFCON title (Reuters + AP,
+  Tue 24 Nov). New cinematic panels generated in-session, inspected: no
+  garbled text or logos. Map pins 10 RIYADH (318,910) and 11 LAUSANNE
+  (260,886); min pairwise pin distance 15.0px (radius 7px), pin 11 clear of
+  the right border. Legend updated to "10 RIYADH · 11 LAUSANNE".
+- Digest: same 8 verified Tuesday bullets (no card/digest duplication —
+  neither new card appears in the digest), wording shortened so every item
+  fits 2 lines; now rendered at 12.5px bold in #1E2430 charcoal with a 3px
+  gap (stack totals 109px of 111px available; content ends 12px above the
+  footer bar). Card summaries also re-inked to #1E2430 (sizes unchanged:
+  heroes 13px, cards 12px).
+- Deliberately NOT reused from v3.1: Malaysia refugee returns and
+  Ukraine/Libya ship strikes (cards), the 10px legend, and the "over two
+  years" Hasina wording.
